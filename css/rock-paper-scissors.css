@@ -9,21 +9,21 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #f0f2f5; 
-    font-family: Arial, sans-serif;
     background: linear-gradient(135deg, #89f7fe, #66a6ff);
+    font-family: 'Poppins', Arial, sans-serif;
     text-transform: capitalize;
 }
 
 .game-container {
-    background: rgba(255, 255, 255, 0.2); 
+    background: rgba(255, 255, 255, 0.15);
     backdrop-filter: blur(15px);
-    padding: 30px 40px;
-    border-radius: 15px;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    padding: 35px 45px;
+    border-radius: 18px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
     text-align: center;
-    width: 350px; 
-    transition: transform 0.2s;
+    width: 360px;
+    color: #ffffff;
+    transition: transform 0.25s;
 }
 
 .game-container:hover {
@@ -32,15 +32,16 @@ body {
 
 .welcome-part h1 {
     font-size: 24px;
-    color: #2f2cc5d2;
+    color: #ffffff;
+    letter-spacing: 1px;
 }
 
 .welcome-part p {
-    font-size: 24px;
-    color: #555;
+    font-size: 26px;
+    font-weight: 600;
+    color: #0a7de991;
     margin-top: 10px;
 }
-
 
 .pickies button {
     border: none;
@@ -51,7 +52,7 @@ body {
 }
 
 .pickies button:hover {
-    transform: scale(1.4);
+    transform: scale(1.35);
 }
 
 img {
@@ -59,7 +60,37 @@ img {
     height: 60px;
 }
 
-hr {
-    margin-top: 25px;
+.user-pick p,
+.computer-pick p {
+    font-size: 18px;
+    margin: 10px 0;
 }
 
+.user-pick p {
+    color: rgba(12, 196, 12, 0.89);
+}
+
+.computer-pick p {
+    color: rgba(221, 7, 7, 0.842);
+}
+
+.result p {
+    font-size: 24px;
+    font-weight: 700;
+    color: #7d09dbe5;
+    margin-top: 10px;
+}
+
+.score {
+    font-size: 24px;
+    color: #e00ab2d5;
+    margin-top: 10px;
+    font-weight: 500;
+}
+
+hr {
+    margin-top: 25px;
+    border: 0;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.3);
+}
