@@ -1,27 +1,65 @@
 * {
-    text-transform: capitalize;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
     height: 100vh;
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f2f5; 
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #89f7fe, #66a6ff);
+    text-transform: capitalize;
 }
 
 .game-container {
-    height: 600px;
-    width: 600px;
+    background: rgba(255, 255, 255, 0.2); 
+    backdrop-filter: blur(15px);
+    padding: 30px 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    width: 350px; 
+    transition: transform 0.2s;
 }
 
-button {
-    cursor: pointer;
-    border-radius: 50%;
+.game-container:hover {
+    transform: translateY(-5px);
+}
+
+.welcome-part h1 {
+    font-size: 24px;
+    color: #2f2cc5d2;
+}
+
+.welcome-part p {
+    font-size: 24px;
+    color: #555;
+    margin-top: 10px;
+}
+
+
+.pickies button {
     border: none;
-    margin: 15px 0 20px 20px;
+    background: none;
+    cursor: pointer;
+    margin: 30px 10px;
+    transition: transform 0.2s;
+}
+
+.pickies button:hover {
+    transform: scale(1.4);
 }
 
 img {
-    height: 80px;
-    width: 80px;
-    padding: 25px;
+    width: 60px;
+    height: 60px;
 }
+
+hr {
+    margin-top: 25px;
+}
+
