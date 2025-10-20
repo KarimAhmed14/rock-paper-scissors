@@ -1,0 +1,27 @@
+* {
+    text-transform: capitalize;
+}
+
+body {
+    height: 100vh;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.game-container {
+    height: 600px;
+    width: 600px;
+}
+
+button {
+    cursor: pointer;
+    border-radius: 50%;
+    border: none;
+    margin: 15px 0 20px 20px;
+}
+
+img {
+    height: 80px;
+    width: 80px;
+    padding: 25px;
+}
