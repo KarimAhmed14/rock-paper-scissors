@@ -63,25 +63,28 @@ function playGame(playerMove) {
 
 document.querySelector('.rock').addEventListener('click', () => {
     const { result, computerMove } = playGame('rock');
-    updateDOM(result, computerMove);
+    updateDOM(result, computerMove, 'rock');
 });
 
 document.querySelector('.paper').addEventListener('click', () => {
     const { result, computerMove } = playGame('paper');
-    updateDOM(result, computerMove);
+    updateDOM(result, computerMove, 'paper');
 });
 
 document.querySelector('.scissors').addEventListener('click', () => {
     const { result, computerMove } = playGame('scissors');
-    updateDOM(result, computerMove);
+    updateDOM(result, computerMove, 'scissors');
 });
 
-function updateDOM(result, computerMove) {
+function updateDOM(result, computerMove, playerMove) {
     document.querySelector('.js-computer-pick').innerHTML = `
-        <p>Computer picked: <img src="images/${computerMove}-emoji.png" alt=""></p>
+    <p>Computer picked: <img src="images/${computerMove}-emoji.png" alt=""></p>
     `;
     document.querySelector('.js-result').innerHTML = `
      <p>${result}</p>
+    `;
+    document.querySelector('.js-user-pick').innerHTML = `
+    <p>You picked: <img src="images/${playerMove}-emoji.png" alt="${playerMove}"></p>
     `;
 };
 
